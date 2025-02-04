@@ -275,6 +275,7 @@ Imprima todas essas informações.
 
 ### 5. Operações com Casting
 Declare as seguintes variáveis:
+
 ```java
 double numero1 = 15.7;
 double numero2 = 8.3;
