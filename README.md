@@ -4,4 +4,5 @@
 
 - [Variáveis, comandos de atribuição e expressões](00-variaveis/)
 - [Estruturas de controle](01-estruturas-de-controle/)
-- [Funções](02-funcoes/)
+- [Arrays](02-arrays/)
+- [Funções](03-funcoes/)
