@@ -21,8 +21,6 @@
   - [Saída de dados](#saída-de-dados)
 - [Exercícios](#exercícios)
 
-
-
 ## Introdução
 
 Uma variável é um espaço na memória do computador que armazena um valor. Em Java, todas as variáveis precisam ser declaradas com um tipo específico antes de serem utilizadas.
