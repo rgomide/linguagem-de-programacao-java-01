@@ -12,6 +12,7 @@
 - [Arrays Multidimensionais](#arrays-multidimensionais)
   - [Iterando sobre Arrays Multidimensionais](#iterando-sobre-arrays-multidimensionais)
 - [Exercícios](#exercícios)
+- [Referências](#referências)
 
 ## Definição
 
@@ -176,3 +177,19 @@ Crie um programa que simule um jogo da velha usando uma matriz 3x3. O programa d
 - Verificar se houve vencedor após cada jogada
 - Identificar empate
 - Mostrar o tabuleiro após cada jogada
+
+## Referências
+
+### Documentação Oficial
+- [Java Arrays (Oracle Official Documentation)](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html)
+- [Class Arrays (Java API)](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Arrays.html)
+
+### Tutoriais e Recursos Online
+- [W3Schools Java Arrays](https://www.w3schools.com/java/java_arrays.asp)
+- [Baeldung - Java Arrays Guide](https://www.baeldung.com/java-arrays-guide)
+- [GeeksforGeeks - Arrays in Java](https://www.geeksforgeeks.org/arrays-in-java/)
+
+### Plataformas de Exercícios
+- [HackerRank - Java Arrays](https://www.hackerrank.com/domains/java?filters%5Bsubdomains%5D%5B%5D=java-data-structure)
+- [Codewars - Java Arrays Katas](https://www.codewars.com/kata/search/java?q=arrays)
+- [LeetCode - Array Problems](https://leetcode.com/tag/array/)

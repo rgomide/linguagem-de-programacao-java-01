@@ -5,13 +5,15 @@
 - [Estrutura de controle condicional](#estrutura-de-controle-condicional)
   - [Estrutura de controle condicional simples](#estrutura-de-controle-condicional-simples)
   - [Estrutura de controle condicional composta](#estrutura-de-controle-condicional-composta)
-  - [Estrutura de controle condicional múltipla](#estrutura-de-controle-condicional-multipla)
+  - [Estrutura de controle condicional múltipla](#estrutura-de-controle-condicional-múltipla)
   - [Estrutura de controle condicional aninhada](#estrutura-de-controle-condicional-aninhada)
   - [Estrutura de controle condicional switch](#estrutura-de-controle-condicional-switch)
-- [Estrutura de controle de repetição](#estrutura-de-controle-de-repeticao)
-  - [Estrutura de controle de repetição com variável de controle](#estrutura-de-controle-de-repeticao-com-variavel-de-controle)
-  - [Estrutura de controle de repetição com teste no início](#estrutura-de-controle-de-repeticao-com-teste-no-inicio)
-  - [Estrutura de controle de repetição com teste no fim](#estrutura-de-controle-de-repeticao-com-teste-no-fim)
+- [Estrutura de controle de repetição](#estrutura-de-controle-de-repetição)
+  - [Estrutura de controle de repetição com variável de controle](#estrutura-de-controle-de-repetição-com-variável-de-controle-for)
+  - [Estrutura de controle de repetição com teste no início](#estrutura-de-controle-de-repetição-com-teste-no-início-while)
+  - [Estrutura de controle de repetição com teste no fim](#estrutura-de-controle-de-repetição-com-teste-no-fim-do-while)
+- [Exercícios](#exercícios)
+- [Referências](#referências)
 
 ## Estrutura de controle condicional
 
