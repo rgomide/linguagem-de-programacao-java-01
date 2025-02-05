@@ -129,10 +129,11 @@ int inteiro = (int) pi;
 Java oferece operadores aritméticos para realizar cálculos matemáticos.
 
 ```java
-int soma = 10 + 5;
-int subtracao = 10 - 5;
-int multiplicacao = 10 * 5;
-int divisao = 10 / 5;
+int soma = 10 + 5; // 15
+int subtracao = 10 - 5; // 5
+int multiplicacao = 10 * 5; // 50
+int divisao = 10 / 5; // 2
+int resto = 10 % 3; // 1
 ```
 
 ### Operadores de atribuição

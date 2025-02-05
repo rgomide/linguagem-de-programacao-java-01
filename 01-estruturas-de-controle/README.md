@@ -197,12 +197,16 @@ do {
 ## Exercícios
 
 ### 1. Faça um programa que receba um número e imprima se ele é par ou ímpar.
+Para verificar se um número é par ou ímpar, podemos usar o operador de módulo `%`. Se o número for par, o resto da divisão por 2 será 0. Se for ímpar, o resto será 1.
 
 ### 2. Faça um programa que receba um número e imprima se ele é positivo ou negativo.
+Para verificar se um número é positivo ou negativo, podemos usar o operador de comparação `>`. Se o número for maior que 0, ele é positivo. Se for menor que 0, ele é negativo.
 
 ### 3. Faça um programa que receba um número e imprima se ele é primo ou não.
+Para verificar se um número é primo, podemos usar um laço `for` para testar se ele é divisível por algum número além de 1 e ele mesmo. Se for divisível por algum outro número, ele não é primo.
 
 ### 4. Faça um programa que receba um número e imprima a tabuada dele.
+Para imprimir a tabuada de um número, podemos usar um laço `for` para multiplicar o número por todos os números de 1 a 10.
 
 ### 5. Faça um programa que receba um número e imprima a sequência de Fibonacci até esse número.
 A sequência de Fibonacci é uma sequência de números onde cada número é a soma dos dois números anteriores.
