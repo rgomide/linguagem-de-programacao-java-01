@@ -1,5 +1,18 @@
 # Arrays em Java
 
+## Sumário
+
+- [Definição](#definição)
+- [Declaração e Inicialização](#declaração-e-inicialização)
+- [Características Importantes](#características-importantes)
+- [Manipulação de Arrays](#manipulação-de-arrays)
+  - [Acesso aos elementos](#acesso-aos-elementos)
+  - [Propriedades e Métodos Úteis](#propriedades-e-métodos-úteis)
+  - [Iterando sobre Arrays](#iterando-sobre-arrays)
+- [Arrays Multidimensionais](#arrays-multidimensionais)
+  - [Iterando sobre Arrays Multidimensionais](#iterando-sobre-arrays-multidimensionais)
+- [Exercícios](#exercícios)
+
 ## Definição
 
 Um array é uma estrutura de dados que armazena uma coleção ordenada de elementos do mesmo tipo. Em Java, arrays são objetos e têm tamanho fixo após sua criação.
