@@ -21,6 +21,16 @@ As estruturas de controle condicionais são usadas para controlar o fluxo de exe
 
 A estrutura condicional simples utiliza o comando `if` para executar um bloco de código apenas se uma condição for verdadeira.
 
+```mermaid
+flowchart
+    A[Início] --> B{"if (condicao)"}
+
+    B -- true --> C[Bloco de código]    
+    B -- false --> D[Resto do código]
+    C --> D
+    D --> E[Fim]
+```
+
 Sintaxe:
 ```java
 if (condicao) {
@@ -36,9 +46,21 @@ if (idade >= 18) {
 }
 ```
 
+
 ### Estrutura de controle condicional composta
 
 A estrutura condicional composta utiliza os comandos `if` e `else` para executar um bloco de código quando a condição for verdadeira e outro bloco quando for falsa.
+
+```mermaid
+flowchart
+    A[Início] --> B{"if (condicao)"}
+
+    B -- true --> C[Bloco de código se verdadeiro]    
+    B -- false --> D["Bloco de código se falso (else)"]
+    D --> E[Resto do código]
+    C --> E
+    E --> F[Fim]
+```
 
 Sintaxe:
 ```java
@@ -62,6 +84,22 @@ if (idade >= 18) {
 ### Estrutura de controle condicional múltipla
 
 A estrutura condicional múltipla utiliza o comando `else if` para verificar múltiplas condições em sequência.
+
+```mermaid
+flowchart
+    A[Início] --> B{"if (condicao1)"}
+
+    B -- true --> C[Bloco de código se condicao1 for verdadeira]    
+    B -- false --> D{"else if (condicao2)"}
+
+    D -- true --> E[Bloco de código se condicao2 for verdadeira]
+    D -- false --> F["else"]
+
+    F --> G[Resto do código]
+    E --> G
+    C --> G
+    G --> H[Fim]
+```
 
 Sintaxe:
 ```java
@@ -91,6 +129,21 @@ if (nota >= 90) {
 ### Estrutura de controle condicional aninhada
 
 A estrutura de controle condicional aninhada é uma estrutura condicional que utiliza outra estrutura condicional dentro de si.
+
+```mermaid
+flowchart
+    A[Início] --> B{"if (condicao1)"}
+
+    B -- true --> C[Bloco de código se condicao1 for verdadeira]
+
+    C --> D{"if (condicao2)"}
+
+    D -- true --> E[Bloco de código se condicao2 for verdadeira]
+    D -- false --> F[Resto do código]
+    B -- false --> F
+    E --> F
+    F --> G[Fim]
+```
 
 Sintaxe:
 ```java
