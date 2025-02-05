@@ -216,3 +216,12 @@ Exemplo:
 Sequência de Fibonacci até o 10º valor é:
 0 1 1 2 3 5 8 13 21 34
 ```
+
+## Referências
+
+- [Estrutura de controle condicional - IF-ELSE](https://www.javatpoint.com/java-if-else)
+- [Estrutura de controle condicional - SWITCH](https://www.javatpoint.com/java-switch)
+- [Estrutura de controle de repetição - FOR](https://www.javatpoint.com/java-for-loop)
+- [Estrutura de controle de repetição - WHILE](https://www.javatpoint.com/java-while-loop)
+- [Estrutura de controle de repetição - DO-WHILE](https://www.javatpoint.com/java-do-while-loop)
+- [Estrutura de controle condicional switch](https://www.javatpoint.com/java-switch-statement)
