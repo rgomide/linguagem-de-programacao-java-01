@@ -282,10 +282,10 @@ double numero2 = 8.3;
 ```
 
 Realize as seguintes operações:
-a) Some os dois números e armazene em uma variável `int`
-b) Multiplique os dois números e armazene em uma variável `long`
-c) Divida o primeiro pelo segundo e armazene em uma variável `float`
-d) Subtraia o segundo do primeiro e armazene em uma variável `int`
+1. Some os dois números e armazene em uma variável `int`
+2. Multiplique os dois números e armazene em uma variável `long`
+3. Divida o primeiro pelo segundo e armazene em uma variável `float`
+4. Subtraia o segundo do primeiro e armazene em uma variável `int`
 
 Para cada operação, imprima:
 - O resultado com o tipo original (double)
