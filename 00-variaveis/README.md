@@ -270,6 +270,7 @@ Declare uma String contendo seu nome completo e crie variáveis para armazenar:
 - Quantidade total de caracteres do nome
 - Primeira letra do nome
 - Última letra do nome
+
 Imprima todas essas informações.
 
 ### 5. Operações com Casting
