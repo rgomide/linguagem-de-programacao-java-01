@@ -37,17 +37,17 @@ sequenceDiagram
 De outra forma, podemos representar a função como um diagrama de fluxo sequencial:
 
 ```mermaid
-flowchart TB
+flowchart LR
     A[Início da Função] --> B[Recebe Parâmetros]
     B --> C[Processa Dados]
     C --> D[Retorna Resultado]
     D --> E[Fim da Função]
     
-    style A fill:#f9f,stroke:#333
-    style E fill:#f9f,stroke:#333
-    style B fill:#bbf,stroke:#333
-    style C fill:#bfb,stroke:#333
-    style D fill:#bbf,stroke:#333
+    style A fill:#ff66ff,stroke:#000,color:#000
+    style E fill:#ff66ff,stroke:#000,color:#000
+    style B fill:#4488ff,stroke:#000,color:#000
+    style C fill:#66cc66,stroke:#000,color:#000
+    style D fill:#4488ff,stroke:#000,color:#000
 ```
 
 ### Sintaxe de uma função
