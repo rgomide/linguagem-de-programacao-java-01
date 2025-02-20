@@ -115,6 +115,7 @@ Exemplo de uso:
 
 ```java
 double area = calcularAreaDoRetangulo(10, 5);
+
 System.out.println("A área do retângulo é: " + area);
 ```
 
@@ -136,6 +137,7 @@ Exemplo de uso:
 
 ```java
 double cubo = calcularCubo(3);
+
 System.out.println("O cubo de 3 é: " + cubo);
 ```
 
@@ -147,6 +149,7 @@ Exemplo de uso:
 
 ```java
 boolean par = verificarPar(2);
+
 System.out.println("O número 2 é par? " + par); // imprime: true
 ```
 
@@ -158,6 +161,7 @@ Exemplo de uso:
 
 ```java
 boolean primo = verificarPrimo(7);
+
 System.out.println("O número 7 é primo? " + primo); // imprime: true
 ```
 
@@ -169,6 +173,7 @@ Exemplo de uso:
 
 ```java
 int[] array = criarArray(5);
+
 imprimirArray(array); // imprime um array com 5 números inteiros aleatórios
 ```
 
@@ -180,6 +185,7 @@ Exemplo de uso:
 
 ```java
 int[] array = {1, 2, 3, 4, 5};
+
 imprimirArray(array); // imprime: [1, 2, 3, 4, 5]
 ```
 
@@ -192,6 +198,7 @@ Exemplo de uso:
 ```java
 int[] array = {5, 3, 8, 2, 1};
 int[] arrayOrdenado = ordenarArray(array);
+
 imprimirArray(arrayOrdenado); // imprime: [1, 2, 3, 5, 8]
 ```
 
@@ -204,6 +211,7 @@ Exemplo de uso:
 ```java
 int[] array = {1, 2, 3, 4, 5};
 int[] arrayInvertido = inverterArray(array);
+
 imprimirArray(arrayInvertido); // imprime: [5, 4, 3, 2, 1]
 ```
 
@@ -216,6 +224,7 @@ Exemplo de uso:
 ```java
 int[] array = {1, 2, 3, 4, 5};
 int[] resultado = encontrarMaiorEMenor(array);
+
 System.out.println("Maior: " + resultado[0]);
 System.out.println("Menor: " + resultado[1]);
 ```
@@ -229,5 +238,6 @@ Exemplo de uso:
 ```java
 int[] array = {1, 2, 3, 4, 5};
 int soma = somarElementos(array);
+
 System.out.println("A soma dos elementos do array é: " + soma); // imprime: 15
 ```
