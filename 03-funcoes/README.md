@@ -1,10 +1,54 @@
 # Funções
 
+## Sumário
+
+- [Funções em Java](#funções-em-java)
+  - [Sintaxe de uma função](#sintaxe-de-uma-função)
+  - [Parâmetros](#parâmetros)
+  - [Retorno](#retorno)
+- [Subrotinas](#subrotinas)
+- [Chamando uma função](#chamando-uma-função)
+- [Exercícios](#exercícios)
+
 ## Funções em Java
 
 Em Java, as funções são chamadas de métodos. Uma função em Java possui uma assinatura e um corpo. A assinatura de uma função é composta pelo nome da função e pelos tipos de seus parâmetros. O corpo de uma função é o conjunto de instruções que compõem a função.
 
 A finalidade de uma função é executar uma tarefa específica e retornar um resultado.
+
+Podemos representar a função como um diagrama de sequência:
+
+```mermaid
+sequenceDiagram
+    participant Chamador
+    participant Função
+    
+    Note over Chamador, Função: Exemplo: calcularAreaDoRetangulo(base, altura)
+    
+    Chamador->>+Função: Chama função com parâmetros
+    Note right of Função: Processa os dados<br/>(base * altura)
+    Função-->>-Chamador: Retorna resultado
+    
+    rect rgb(200, 230, 200)
+        Note over Chamador: Continua execução<br/>com o valor retornado
+    end
+```
+
+De outra forma, podemos representar a função como um diagrama de fluxo sequencial:
+
+```mermaid
+flowchart TB
+    A[Início da Função] --> B[Recebe Parâmetros]
+    B --> C[Processa Dados]
+    C --> D[Retorna Resultado]
+    D --> E[Fim da Função]
+    
+    style A fill:#f9f,stroke:#333
+    style E fill:#f9f,stroke:#333
+    style B fill:#bbf,stroke:#333
+    style C fill:#bfb,stroke:#333
+    style D fill:#bbf,stroke:#333
+```
 
 ### Sintaxe de uma função
 
