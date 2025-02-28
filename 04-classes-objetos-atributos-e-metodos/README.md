@@ -319,6 +319,8 @@ Os modificadores de acesso são representados pelos símbolos `+`, `-` ou `#` e 
 
 ## Exercícios
 
+Em seu projeto, crie uma classe chamada `Main` para testar as classes desenvolvidas a partir dos exercícios propostos.
+
 ### Exercício 1 - Semáforo
 
 Construa uma classe chamada `Luz` que simule um semáforo de tráfego. O atributo `cor` da classe deve mudar de `Verde` a `Amarelo` e `Vermelho` e de novo voltar para `Verde` mediante o método `mudar()`. Quando um objeto `Luz` é criado sua cor inicial será o `Vermelho`.
