@@ -7,6 +7,16 @@
 - [Arrays](02-arrays/)
 - [Funções](03-funcoes/)
 
+## Programação Orientada a Objetos
+
+- [Classes, objetos, atributos e métodos](04-classes-objetos-atributos-e-metodos/)
+- Construtores e encapsulamento
+- Atributos e métodos de classe
+- Herança
+- Classes Object e String
+- Polimorfismo
+
+
 ## Solução de problemas
 
 ### VSCode Java Debugger não carregando
