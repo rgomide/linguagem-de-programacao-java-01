@@ -5,6 +5,7 @@
 - [Classes](#classes)
   - [Sintaxe na linguagem Java](#sintaxe-na-linguagem-java)
 - [Atributos - Variáveis de instância](#atributos---variáveis-de-instância)
+  - [Inicializando atributos](#inicializando-atributos)
   - [Declarando uma variável do tipo da classe](#declarando-uma-variável-do-tipo-da-classe)
   - [Acessando atributos de um objeto](#acessando-atributos-de-um-objeto)
 - [Métodos - Funções de instância](#métodos---funções-de-instância)
@@ -56,6 +57,18 @@ public class Carro {
   String modelo;
   String cor;
   int velocidade;
+}
+```
+
+### Inicializando atributos
+
+Um atributo pode ser inicializado com um valor padrão ou com um valor específico. O valor padrão depende do tipo de dado do atributo. Por exemplo, o atributo `String` é inicializado com `null`, o atributo `int` é inicializado com `0`, o atributo `double` é inicializado com `0.0`, e assim por diante.
+
+Podemos também inicializar um atributo com um valor específico. Como por exemplo:
+
+```java
+public class Carro {
+  String marca = "Ford";
 }
 ```
 
@@ -306,6 +319,24 @@ Os modificadores de acesso são representados pelos símbolos `+`, `-` ou `#` e 
 
 ## Exercícios
 
+### Exercício 1 - Semáforo
+
+Construa uma classe chamada `Luz` que simule um semáforo de tráfego. O atributo `cor` da classe deve mudar de `Verde` a `Amarelo` e `Vermelho` e de novo voltar para `Verde` mediante o método `mudar()`. Quando um objeto `Luz` é criado sua cor inicial será o `Vermelho`.
+
+
+### Exercício 2 - Conta Bancária
+
+Construa uma classe chamada `ContaBancaria` que simule uma conta bancária. O atributo `saldo` da classe deve ser inicializado com o valor `0.0`. O método `depositar(double valor)` deve aumentar o saldo em uma quantidade específica e o método `sacar(double valor)` deve diminuir o saldo em uma quantidade específica.
+
+### Exercício 3 - Retângulo
+
+Construa uma classe chamada `Retangulo` que simule um retângulo. O atributo `largura` e `altura` da classe devem ser inicializados com o valor `0`. O método `calcularArea()` deve calcular e retornar a área do retângulo e o método `calcularPerimetro()` deve calcular e retornar o perímetro do retângulo.
+
+### Exercício 4 - Funcionário
+
+Crie uma classe que represente um funcionário de um banco. A classe deve ter o nome do funcionário, o departamento onde trabalha (String), seu salário (double), a data de entrada no banco (String), seu RG (String) e um valor booleano que indique se o funcionário está na empresa no momento ou se já foi embora. 
+
+Crie um método bonificar que aumenta o salário do funcionário de acordo com o parâmetro passado como argumento. Crie, também, um método demitir, que não recebe parâmetro algum, só modifica o valor booleano indicando que o funcionário não trabalha mais na empresa. Crie também um método mostrar, que não recebe e nem devolve valor algum, simplesmente imprime todos os atributos do funcionário.
 
 ## Referências
 

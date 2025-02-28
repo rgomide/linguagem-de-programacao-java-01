@@ -1,7 +1,7 @@
 package br.com.gomide;
 
 public class Carro {
-  public String marca;
+  public String marca = "Não Definido";
   public String modelo;
   public String cor;
   public int velocidade;
