@@ -205,9 +205,9 @@ A estrutura de pastas do projeto deve refletir a estrutura de pacotes. Como por 
 
 ```
 br/
-├─ com/
-│  └─ gomide/
-│     └─ Carro.java
+└─ com/
+   └─ gomide/
+      └─ Carro.java
 ```
 
 ## Modificadores de acesso
