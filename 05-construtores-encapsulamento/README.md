@@ -512,8 +512,6 @@ Adicione métodos encapsulados para:
 
 ```mermaid
 classDiagram
-    Aluno "1" --> "*" Disciplina : matriculado em
-    
     class Disciplina {
         -String nome
         -int cargaHoraria
