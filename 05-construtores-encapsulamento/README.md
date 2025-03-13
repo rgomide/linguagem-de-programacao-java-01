@@ -1,17 +1,17 @@
 # Construtores e Encapsulamento
 
 ## Sumário
-1. [Construtores](#construtores)
-   - [O que são construtores?](#o-que-são-construtores)
-   - [Construtores padrão](#construtores-padrão)
-   - [Construtores com parâmetros](#construtores-com-parâmetros)
-   - [Sobrecarga de construtores](#sobrecarga-de-construtores)
-   - [Construtores e a palavra-chave this](#construtores-e-a-palavra-chave-this)
-2. [Encapsulamento](#encapsulamento)
-   - [O que é encapsulamento?](#o-que-é-encapsulamento)
-   - [Métodos getters e setters](#métodos-getters-e-setters)
-   - [Benefícios do encapsulamento](#benefícios-do-encapsulamento)
-   - [Exemplo completo de encapsulamento](#exemplo-completo-de-encapsulamento)
+- [Construtores](#construtores)
+  - [O que são construtores?](#o-que-são-construtores)
+  - [Construtores padrão](#construtores-padrão)
+  - [Construtores com parâmetros](#construtores-com-parâmetros)
+  - [Sobrecarga de construtores](#sobrecarga-de-construtores)
+  - [Construtores e a palavra-chave this](#construtores-e-a-palavra-chave-this)
+- [Encapsulamento](#encapsulamento)
+  - [O que é encapsulamento?](#o-que-é-encapsulamento)
+  - [Métodos getters e setters](#métodos-getters-e-setters)
+  - [Benefícios do encapsulamento](#benefícios-do-encapsulamento)
+  - [Exemplo completo de encapsulamento](#exemplo-completo-de-encapsulamento)
 
 ## Construtores
 
@@ -331,3 +331,101 @@ Este exemplo mostra como:
 
 O encapsulamento é um dos pilares fundamentais da orientação a objetos e seu uso adequado torna o código mais robusto, seguro e fácil de manter.
 
+## Exercícios
+
+### Exercício 1: Criação de uma classe Livro com múltiplos construtores
+
+Crie uma classe chamada `Livro` com os seguintes atributos privados:
+- `titulo` (String)
+- `autor` (String)
+- `numeroPaginas` (int)
+- `anoPublicacao` (int)
+- `disponivel` (boolean)
+
+Implemente três construtores diferentes:
+1. Um construtor que receba apenas título e autor
+2. Um construtor que receba título, autor e número de páginas
+3. Um construtor que receba todos os atributos
+
+Em todos os construtores, o atributo `disponivel` deve ser inicializado como `true` se não for informado.
+
+Crie uma classe `TesteLivro` com um método `main` para testar a criação de livros usando os diferentes construtores.
+
+### Exercício 2: Implementação de uma classe ContaCorrente com encapsulamento
+
+Crie uma classe `ContaCorrente` que represente uma conta bancária com os seguintes atributos privados:
+- `numeroConta` (String)
+- `titular` (String)
+- `saldo` (double)
+- `limiteChequeEspecial` (double)
+
+Implemente:
+1. Um construtor que inicialize todos os atributos
+2. Getters para todos os atributos
+3. Setter apenas para `limiteChequeEspecial` (os outros atributos não devem ser alterados diretamente)
+4. Métodos `depositar(double valor)`, `sacar(double valor)` e `consultarSaldoDisponivel()` que retorne a soma do saldo com o limite do cheque especial
+5. O método `sacar` deve verificar se há saldo suficiente (considerando o cheque especial) e retornar um boolean indicando se a operação foi bem-sucedida
+
+Aplique validações adequadas em todos os métodos para garantir que os valores sejam consistentes (ex: não permitir saques ou depósitos de valores negativos).
+
+### Exercício 3: Classe Pessoa com validação de dados
+
+Desenvolva uma classe `Pessoa` com os seguintes atributos privados:
+- `nome` (String)
+- `idade` (int)
+- `email` (String)
+- `cpf` (String)
+
+Implemente:
+1. Um construtor que inicialize todos os atributos
+2. Getters e setters para todos os atributos
+3. Validações nos setters:
+   - `setIdade`: não aceitar idades negativas ou acima de 150 anos
+   - `setEmail`: verificar se o email contém o caractere '@' (validação simples)
+   - `setCpf`: verificar se o CPF tem 11 dígitos (sem formatação) ou 14 caracteres (com formatação)
+
+Crie um método `exibirDados()` que mostre as informações da pessoa, mas exiba apenas os últimos 3 dígitos do CPF por questões de privacidade (ex: "***.***.***-12").
+
+### Exercício 4: Sistema de Estoque com construtores em cadeia
+
+Implemente um sistema simples de estoque com uma classe `Produto` que contenha:
+- `codigo` (int)
+- `nome` (String)
+- `preco` (double)
+- `quantidadeEmEstoque` (int)
+- `categoria` (String)
+- `fornecedor` (String)
+
+Crie os seguintes construtores:
+1. Um construtor completo que receba todos os atributos
+2. Um construtor que receba código, nome, preço e quantidade, deixando categoria como "Geral" e fornecedor como "Não informado"
+3. Um construtor que receba apenas código e nome, fixando preço como 0.0, quantidade como 0, e usando os valores padrão para categoria e fornecedor
+
+Utilize o conceito de construtores em cadeia com a palavra-chave `this`.
+
+Adicione métodos encapsulados para:
+- Adicionar estoque (`adicionarEstoque(int quantidade)`)
+- Remover estoque (`removerEstoque(int quantidade)`) com validação para não permitir quantidade negativa
+- Atualizar preço (`atualizarPreco(double novoPreco)`) com validação para não aceitar preços negativos
+- Calcular valor total em estoque (`calcularValorTotalEmEstoque()`) que multiplica preço pela quantidade
+
+### Exercício 5: Sistema de Gerenciamento de Alunos
+
+Desenvolva duas classes que trabalhem juntas:
+
+**Classe Disciplina:**
+- Atributos privados: `nome`, `cargaHoraria`, `professor`
+- Construtor que inicialize todos os atributos
+- Getters e setters apropriados
+
+**Classe Aluno:**
+- Atributos privados: `matricula`, `nome`, `disciplinas` (um array de objetos Disciplina), `notas` (um array de doubles), `frequencia` (um valor entre 0 e 100)
+- Construtor que inicialize matricula, nome e crie arrays vazios para disciplinas e notas
+- Métodos:
+  - `adicionarDisciplina(Disciplina disciplina)`: adiciona uma disciplina ao array
+  - `registrarNota(int indiceDisciplina, double nota)`: associa uma nota a uma disciplina específica
+  - `setFrequencia(double frequencia)`: define a frequência com validação (0-100)
+  - `calcularMedia()`: calcula a média das notas
+  - `verificarAprovacao()`: retorna true se a média for >= a 7.0 E a frequência >= a 75%
+
+Utilize encapsulamento adequado em todas as operações, garantindo que as regras de negócio sejam preservadas e que a classe funcione corretamente.
