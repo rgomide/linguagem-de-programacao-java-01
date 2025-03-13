@@ -12,6 +12,7 @@
   - [Métodos getters e setters](#métodos-getters-e-setters)
   - [Benefícios do encapsulamento](#benefícios-do-encapsulamento)
   - [Exemplo completo de encapsulamento](#exemplo-completo-de-encapsulamento)
+- [Exercícios](#exercícios)
 
 ## Construtores
 
