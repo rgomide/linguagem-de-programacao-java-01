@@ -380,6 +380,26 @@ Crie uma classe `TesteLivro` com um método `main` para testar a criação de li
 
 ### Exercício 2: Implementação de uma classe ContaCorrente com encapsulamento
 
+```mermaid
+classDiagram
+    class ContaCorrente {
+        -String numeroConta
+        -String titular
+        -double saldo
+        -double limiteChequeEspecial
+        
+        +ContaCorrente(String numeroConta, String titular, double saldo, double limiteChequeEspecial)
+        +String getNumeroConta()
+        +String getTitular()
+        +double getSaldo()
+        +double getLimiteChequeEspecial()
+        +void setLimiteChequeEspecial(double limiteChequeEspecial)
+        +boolean depositar(double valor)
+        +boolean sacar(double valor)
+        +double consultarSaldoDisponivel()
+    }
+```
+
 Crie uma classe `ContaCorrente` que represente uma conta bancária com os seguintes atributos privados:
 - `numeroConta` (String)
 - `titular` (String)
@@ -396,6 +416,27 @@ Implemente:
 Aplique validações adequadas em todos os métodos para garantir que os valores sejam consistentes (ex: não permitir saques ou depósitos de valores negativos).
 
 ### Exercício 3: Classe Pessoa com validação de dados
+
+```mermaid
+classDiagram
+    class Pessoa {
+        -String nome
+        -int idade
+        -String email
+        -String cpf
+        
+        +Pessoa(String nome, int idade, String email, String cpf)
+        +String getNome()
+        +void setNome(String nome)
+        +int getIdade()
+        +void setIdade(int idade)
+        +String getEmail()
+        +void setEmail(String email)
+        +String getCpf()
+        +void setCpf(String cpf)
+        +void exibirDados()
+    }
+```
 
 Desenvolva uma classe `Pessoa` com os seguintes atributos privados:
 - `nome` (String)
@@ -414,6 +455,37 @@ Implemente:
 Crie um método `exibirDados()` que mostre as informações da pessoa, mas exiba apenas os últimos 3 dígitos do CPF por questões de privacidade (ex: "***.***.***-12").
 
 ### Exercício 4: Sistema de Estoque com construtores em cadeia
+
+```mermaid
+classDiagram
+    class Produto {
+        -int codigo
+        -String nome
+        -double preco
+        -int quantidadeEmEstoque
+        -String categoria
+        -String fornecedor
+        
+        +Produto(int codigo, String nome, double preco, int quantidadeEmEstoque, String categoria, String fornecedor)
+        +Produto(int codigo, String nome, double preco, int quantidadeEmEstoque)
+        +Produto(int codigo, String nome)
+        
+        +int getCodigo()
+        +String getNome()
+        +double getPreco()
+        +void setPreco(double preco)
+        +int getQuantidadeEmEstoque()
+        +String getCategoria()
+        +void setCategoria(String categoria)
+        +String getFornecedor()
+        +void setFornecedor(String fornecedor)
+        
+        +void adicionarEstoque(int quantidade)
+        +boolean removerEstoque(int quantidade)
+        +boolean atualizarPreco(double novoPreco)
+        +double calcularValorTotalEmEstoque()
+    }
+```
 
 Implemente um sistema simples de estoque com uma classe `Produto` que contenha:
 - `codigo` (int)
