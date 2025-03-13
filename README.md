@@ -10,8 +10,9 @@
 ## Programação Orientada a Objetos
 
 - [Classes, objetos, atributos e métodos](04-classes-objetos-atributos-e-metodos/)
-- Construtores e encapsulamento
+- [Construtores e encapsulamento](05-construtores-encapsulamento/)
 - Atributos e métodos de classe
+- Sobrecarga de métodos
 - Herança
 - Classes Object e String
 - Polimorfismo

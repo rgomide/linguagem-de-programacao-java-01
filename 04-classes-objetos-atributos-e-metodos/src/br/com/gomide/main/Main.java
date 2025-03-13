@@ -1,22 +1,16 @@
 package br.com.gomide.main;
 
-import br.com.gomide.Carro;
+import br.com.gomide.ContaBancaria;
 
 public class Main {
   public static void main(String[] args) {
-    Carro meuCarro = new Carro();
+    Double teste;
 
-    meuCarro.marca = "Ford";
-    meuCarro.modelo = "Fusion";
-    meuCarro.cor = "Preto";
-    meuCarro.velocidade = 0;
+    for (int i = 0; i < 10; i++) {
+      System.out.println(0.1 + 0.2);
 
-    meuCarro.mostrarDetalhes();
 
-    meuCarro.acelerar(10);
-    meuCarro.mostrarDetalhes();
+    }
 
-    meuCarro.frear(5);
-    meuCarro.mostrarDetalhes();
   }
 }
