@@ -336,6 +336,32 @@ O encapsulamento é um dos pilares fundamentais da orientação a objetos e seu 
 
 ### Exercício 1: Criação de uma classe Livro com múltiplos construtores
 
+```mermaid
+classDiagram
+    class Livro {
+        -String titulo
+        -String autor
+        -int numeroPaginas
+        -int anoPublicacao
+        -boolean disponivel
+        
+        +Livro(String titulo, String autor)
+        +Livro(String titulo, String autor, int numeroPaginas)
+        +Livro(String titulo, String autor, int numeroPaginas, int anoPublicacao, boolean disponivel)
+        
+        +String getTitulo()
+        +void setTitulo(String titulo)
+        +String getAutor()
+        +void setAutor(String autor)
+        +int getNumeroPaginas()
+        +void setNumeroPaginas(int numeroPaginas)
+        +int getAnoPublicacao()
+        +void setAnoPublicacao(int anoPublicacao)
+        +boolean isDisponivel()
+        +void setDisponivel(boolean disponivel)
+    }
+```
+
 Crie uma classe chamada `Livro` com os seguintes atributos privados:
 - `titulo` (String)
 - `autor` (String)
@@ -348,7 +374,7 @@ Implemente três construtores diferentes:
 2. Um construtor que receba título, autor e número de páginas
 3. Um construtor que receba todos os atributos
 
-Em todos os construtores, o atributo `disponivel` deve ser inicializado como `true` se não for informado.
+Em todos os construtores, o atributo `disponivel` deve ser inicializado como `true` se não for informado. Além disso, implemente métodos getters e setters para todos os atributos.
 
 Crie uma classe `TesteLivro` com um método `main` para testar a criação de livros usando os diferentes construtores.
 
