@@ -510,6 +510,46 @@ Adicione métodos encapsulados para:
 
 ### Exercício 5: Sistema de Gerenciamento de Alunos
 
+```mermaid
+classDiagram
+    Aluno "1" --> "*" Disciplina : matriculado em
+    
+    class Disciplina {
+        -String nome
+        -int cargaHoraria
+        -String professor
+        
+        +Disciplina(String nome, int cargaHoraria, String professor)
+        +String getNome()
+        +void setNome(String nome)
+        +int getCargaHoraria()
+        +void setCargaHoraria(int cargaHoraria)
+        +String getProfessor()
+        +void setProfessor(String professor)
+    }
+    
+    class Aluno {
+        -String matricula
+        -String nome
+        -Disciplina[] disciplinas
+        -double[] notas
+        -double frequencia
+        
+        +Aluno(String matricula, String nome)
+        +String getMatricula()
+        +String getNome()
+        +void setNome(String nome)
+        +Disciplina[] getDisciplinas()
+        +double[] getNotas()
+        +double getFrequencia()
+        +void setFrequencia(double frequencia)
+        +void adicionarDisciplina(Disciplina disciplina)
+        +void registrarNota(int indiceDisciplina, double nota)
+        +double calcularMedia()
+        +boolean verificarAprovacao()
+    }
+```
+
 Desenvolva duas classes que trabalhem juntas:
 
 **Classe Disciplina:**
