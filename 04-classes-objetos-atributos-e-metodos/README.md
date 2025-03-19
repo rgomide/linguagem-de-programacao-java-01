@@ -340,6 +340,18 @@ Crie uma classe que represente um funcionário de um banco. A classe deve ter o 
 
 Crie um método bonificar que aumenta o salário do funcionário de acordo com o parâmetro passado como argumento. Crie, também, um método demitir, que não recebe parâmetro algum, só modifica o valor booleano indicando que o funcionário não trabalha mais na empresa. Crie também um método mostrar, que não recebe e nem devolve valor algum, simplesmente imprime todos os atributos do funcionário.
 
+### Exercício 5 - Sistema Acadêmico
+Desenvolva uma classe `Estudante` no pacote `br.com.universidade.academico`. A classe deve ter os atributos: `matricula` (String), `nome` (String), `curso` (String), `notas` (array de double com tamanho 4) e `frequencia` (int representando porcentagem). Implemente métodos para `adicionarNota(int indice, double valor)`, `calcularMedia()` que retorna a média das notas, e `verificarAprovacao()` que retorna true se a média for maior ou igual a 7.0 e a frequência maior ou igual a 75%.
+
+### Exercício 6 - Biblioteca
+Crie uma classe chamada `Livro` no pacote `br.com.biblioteca.modelo`. A classe deve ter os atributos: `titulo` (String), `autor` (String), `numeroPaginas` (int), `anoPublicacao` (int) e `emprestado` (boolean). Crie métodos para emprestar o livro (`emprestar()`), que muda o estado de `emprestado` para true, e devolver o livro (`devolver()`), que muda o estado para false. O método `mostrarDetalhes()` deve exibir todas as informações do livro.
+
+### Exercício 7 - Loja de Produtos Eletrônicos
+Desenvolva uma classe `ProdutoEletronico` no pacote `br.com.loja.produtos`. A classe deve conter os atributos: `codigo` (int), `nome` (String), `preco` (double), `marca` (String), `modelo` (String) e `quantidadeEmEstoque` (int). Implemente métodos para `vender(int quantidade)`, que diminui o estoque, `reporEstoque(int quantidade)`, que aumenta o estoque, e `aplicarDesconto(double percentual)`, que reduz o preço. Adicione validações para não permitir estoque negativo ou percentual de desconto inválido.
+
+### Exercício 8 - Sistema de Agendamento
+Crie uma classe `Consulta` no pacote `br.com.clinica.agendamento`. Esta classe deverá ter os atributos: `paciente` (String), `medico` (String), `data` (String), `horario` (String), `realizada` (boolean) e `valorConsulta` (double). Adicione métodos para `remarcar(String novaData, String novoHorario)`, `cancelar()` que define o atributo `realizada` como false, e `calcularDesconto(double percentual)` que retorna o valor da consulta com desconto.
+
 ## Referências
 
 - [Classes and Objects in Java](https://www.geeksforgeeks.org/classes-objects-java/)
