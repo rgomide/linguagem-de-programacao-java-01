@@ -566,3 +566,41 @@ Desenvolva duas classes que trabalhem juntas:
   - `verificarAprovacao()`: retorna true se a média for >= a 7.0 E a frequência >= a 75%
 
 Utilize encapsulamento adequado em todas as operações, garantindo que as regras de negócio sejam preservadas e que a classe funcione corretamente.
+
+### Exercício 6: Sistema de Gerenciamento Bancário
+
+Crie um sistema bancário com as seguintes características:
+
+- Uma classe `ContaBancaria` que deve:
+  - Ter atributos privados para saldo, número da conta, senha e limite
+  - Implementar diferentes construtores (sobrecarga):
+    - Um que recebe apenas número da conta e senha
+    - Outro que recebe número da conta, senha e saldo inicial
+    - Outro que recebe todos os parâmetros incluindo limite
+  - Implementar validações nos setters:
+    - Senha deve ter no mínimo 6 caracteres
+    - Limite não pode ser negativo
+  - Implementar métodos para:
+    - Depósito (não permitir valores negativos)
+    - Saque (com validação de saldo suficiente)
+    - Transferência entre contas (verificando senha)
+    - Alteração de senha (requerendo senha antiga)
+    - Ajuste de limite (novo valor não pode ser negativo)
+
+### Exercícios 7: Sistema de Gerenciamento de Biblioteca
+
+Desenvolva um sistema de biblioteca com:
+
+- Uma classe `Livro`:
+  - Definir construtores sobrecarregados para inicializar os atributos
+  - Ter atributos encapsulados:
+    - ISBN (somente leitura após construção)
+    - Título, autor, número de páginas
+    - Status de empréstimo
+    - Histórico de empréstimos. Utilize `List` de `String` para armazenar o histórico
+
+- Uma classe `Biblioteca`:
+  - Coleção privada de livros. Utilize `List` para armazenar os livros.
+  - Método para adicionar livros (verificando ISBN único)
+  - Sistema de empréstimo com data de devolução
+  - Relatório de livros mais emprestados
