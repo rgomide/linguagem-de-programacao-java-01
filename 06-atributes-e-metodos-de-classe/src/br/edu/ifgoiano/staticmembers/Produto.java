@@ -18,9 +18,9 @@ public class Produto {
 
   // Métodos de instância
   public void aplicarDesconto(double percentual) {
-    double desconto = preco * (percentual / 100);
+    double desconto = this.preco * (percentual / 100);
     valorTotalEstoque -= desconto;
-    preco -= desconto;
+    this.preco -= desconto;
   }
 
   // Métodos estáticos
