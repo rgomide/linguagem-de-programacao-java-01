@@ -11,7 +11,7 @@
 
 - [Classes, objetos, atributos e métodos](04-classes-objetos-atributos-e-metodos/)
 - [Construtores e encapsulamento](05-construtores-encapsulamento/)
-- Atributos e métodos de classe
+- [Atributos e métodos de classe](06-atributos-e-metodos-de-classe/)
 - Sobrecarga de métodos
 - Herança
 - Classes Object e String
