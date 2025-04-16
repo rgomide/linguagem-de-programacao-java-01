@@ -1,4 +1,4 @@
-package br.edu.ifgoiano.static_members;
+package br.edu.ifgoiano.staticmembers;
 
 public class Produto {
   // Atributos de instância
