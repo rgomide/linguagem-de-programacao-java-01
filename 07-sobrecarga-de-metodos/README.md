@@ -89,25 +89,21 @@ A sobrecarga de métodos é uma técnica poderosa que deve ser usada com cuidado
 
 ## Exercícios
 
-1. **Calculadora Básica**
-   Crie uma classe `Calculadora` com métodos sobrecarregados para realizar operações matemáticas básicas:
+1. Crie uma classe `Calculadora` com métodos sobrecarregados para realizar operações matemáticas básicas:
    - `somar`: deve ter versões para 2, 3 e 4 números inteiros
    - `subtrair`: deve ter versões para 2 números inteiros e 2 números decimais
    - `multiplicar`: deve ter versões para 2 números inteiros e 2 números decimais
    - `dividir`: deve ter versões para 2 números inteiros e 2 números decimais
 
-2. **Gerenciador de Texto**
-   Crie uma classe `GerenciadorTexto` com métodos sobrecarregados para:
+2. Crie uma classe `GerenciadorTexto` com métodos sobrecarregados para:
    - Concatenar 2, 3 ou 4 strings
    - Repetir uma string N vezes (onde N pode ser int ou double)
 
-3. **Sistema de Notas**
-   Crie uma classe `SistemaNotas` com métodos sobrecarregados para:
+3. Crie uma classe `SistemaNotas` com métodos sobrecarregados para:
    - Calcular a média de 2, 3 ou 4 notas
    - Verificar se um aluno foi aprovado (métodos que aceitam diferentes tipos de parâmetros)
 
-4. **Banco de Dados Simulado**
-   Crie uma classe `BancoDados` com métodos sobrecarregados para:
+4. Crie uma classe `BancoDados` com métodos sobrecarregados para:
    - Inserir registros (com diferentes combinações de campos)
    - Buscar registros (por diferentes critérios)
    - Atualizar registros (com diferentes conjuntos de dados)
