@@ -1,4 +1,4 @@
-package bf.edu.ifgoiano.sobrecarga;
+package br.edu.ifgoiano.sobrecarga;
 
 public class Main {
   public static void main(String[] args) {

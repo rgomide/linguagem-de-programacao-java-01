@@ -1,4 +1,4 @@
-package bf.edu.ifgoiano.sobrecarga;
+package br.edu.ifgoiano.sobrecarga;
 
 public class Calculadora {
   // Calcula a área de um retângulo
