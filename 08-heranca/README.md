@@ -6,6 +6,7 @@
 - [Tipos de Herança](#tipos-de-herança)
 - [Modificadores de Acesso e Herança](#modificadores-de-acesso-e-herança)
 - [A palavra-chave `super`](#a-palavra-chave-super)
+- [Representação gráfica da herança na UML](#representação-gráfica-da-herança-na-uml)
 - [Exercícios](#exercícios)
 
 ## Conceito de Herança
@@ -186,6 +187,28 @@ public void apresentar() {
     super.apresentar(); // Chama o método apresentar() da classe pai
     System.out.println("Sou estudante de " + curso);
 }
+```
+
+## Representação gráfica da herança na UML
+
+```mermaid
+classDiagram
+    class Animal {
+        +nome:String
+        +idade:int
+        +emitirSom() void
+    }
+    
+    class Cachorro {
+        +raca:String
+        +abanarRabo() void
+        +brincar() void
+        +mostrarInfo() void
+        +dormir() void
+    }
+
+    Animal <|-- Cachorro
+
 ```
 
 ## Exercícios
