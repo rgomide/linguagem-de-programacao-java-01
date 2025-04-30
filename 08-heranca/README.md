@@ -191,6 +191,8 @@ public void apresentar() {
 
 ## Representação gráfica da herança na UML
 
+A herança é representada na UML com uma seta apontando da subclasse para a superclasse.
+
 ```mermaid
 classDiagram
     class Animal {
