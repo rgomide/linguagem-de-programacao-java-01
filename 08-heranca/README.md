@@ -182,7 +182,6 @@ public Aluno(String nome, int idade, String curso) {
 
 2. **Acessar membros da classe pai**:
 ```java
-@Override
 public void apresentar() {
     super.apresentar(); // Chama o método apresentar() da classe pai
     System.out.println("Sou estudante de " + curso);
@@ -195,21 +194,44 @@ public void apresentar() {
 Crie uma classe `Veiculo` com atributos como `marca`, `modelo` e `ano`. Em seguida, crie as subclasses `Carro` e `Moto` que herdam de `Veiculo`. Na classe `Carro`, adicione o atributo `numPortas` e na classe `Moto`, o atributo `cilindrada`. Implemente construtores, getters e setters apropriados.
 
 ### Exercício 2
-Crie uma classe abstrata `Funcionario` com atributos `nome`, `cpf` e `salario`. Adicione um método abstrato `calcularBonificacao()`. Crie duas subclasses: `Gerente` e `Vendedor`. Para o `Gerente`, a bonificação é 15% do salário, enquanto para o `Vendedor` é 10% do salário mais 0.5% do total de vendas realizadas.
+Crie uma classe `Funcionario` com atributos `nome`, `cpf` e `salario`. Crie duas subclasses: `Gerente` e `Vendedor` com o método `calcularBonificacao(double totalVendas)`. Para o `Gerente`, a bonificação é 15% do salário, enquanto para o `Vendedor` é 10% do salário mais 0.5% do total de vendas realizadas.
 
 ### Exercício 3
-Implemente um sistema de figuras geométricas usando herança. Crie uma classe abstrata `FiguraGeometrica` com métodos abstratos `calcularArea()` e `calcularPerimetro()`. Em seguida, crie as subclasses `Quadrado`, `Circulo` e `Triangulo` implementando adequadamente os métodos herdados.
+Implemente um sistema de figuras geométricas usando herança. Crie uma classe `FiguraGeometrica` com atributos como `nome` e `cor`. Em seguida, crie as subclasses `Quadrado` (com atributo `lado`), `Circulo` (com atributo `raio`) e `Triangulo` (com atributos `base` e `altura`). Cada subclasse deve ter seus próprios métodos para calcular área e perímetro de acordo com sua forma específica.
 
 ### Exercício 4
-Desenvolva um sistema de conta bancária. Crie uma classe base `ContaBancaria` com atributos como `numeroConta`, `titular` e `saldo`. Adicione os métodos `depositar()`, `sacar()` e `verSaldo()`. Em seguida, crie duas subclasses:
-- `ContaPoupanca`: com taxa de juros e método para calcular rendimento
-- `ContaCorrente`: com limite de cheque especial e taxa de manutenção mensal
+Desenvolva um sistema de conta bancária. Crie uma classe `ContaBancaria` com atributos `numeroConta`, `titular` e `saldo`. Adicione os métodos `depositar(double valor)`, `sacar(double valor)` e `verSaldo()`. Em seguida, crie duas subclasses:
+- `ContaPoupanca`: com atributo `taxaJuros` e método `calcularRendimento(int meses)` que retorna o rendimento baseado na taxa de juros e no saldo atual. A fórmula para calcular o rendimento é: `rendimento = saldo * taxaJuros * meses`.
+- `ContaCorrente`: com atributos `limiteChequeEspecial` e `taxaManutencao`, e método `cobrarTaxaManutencao()` que debita a taxa do saldo
 
 ### Exercício 5
-Crie uma hierarquia de classes para representar diferentes tipos de produtos em um sistema de vendas:
-- Classe base `Produto` com atributos como `codigo`, `nome`, `preco` e método para calcular o valor final
-- Subclasse `ProdutoPerecivel` que adiciona data de validade e um método para verificar se está vencido
-- Subclasse `ProdutoEletronico` com atributos como voltagem e garantia em meses
-- Subclasse `Livro` com autor, editora e número de páginas
+Crie uma hierarquia de classes para um sistema de produtos:
 
-Para cada subclasse, sobrescreva o método `toString()` para fornecer uma representação textual adequada do objeto.
+1. Crie uma classe base `Produto` com os atributos básicos:
+- `codigo`
+- `nome` 
+- `preco`
+
+2. Crie as seguintes subclasses que herdam de `Produto`:
+
+- `ProdutoAlimenticio`:
+  - Atributos adicionais: `dataValidade`
+  - Métodos:
+    - `verificarVencimento()`: verifica se o produto está vencido
+    
+- `ProdutoEletronico`:
+  - Atributos adicionais: `voltagem`, `garantiaMeses`
+  - Métodos:
+    - `calcularGarantiaEstendida()`: retorna valor da garantia estendida
+    
+- `Livro`:
+  - Atributos adicionais: `autor`, `editora`, `numPaginas`
+  - Métodos:
+    - `calcularFrete()`: retorna valor do frete baseado no número de páginas
+
+Cada subclasse deve ter:
+- Construtor que receba os atributos necessários
+- Getters e setters apropriados
+- Método `imprimirInformacoes()` que mostre os dados específicos de cada tipo de produto
+
+Obs.: utilize a classe `java.util.Date` para representar a data de validade do produto alimentício. O comando `new Date()` cria um objeto com a data e hora atual. O comando `new GregorianCalendar(ano, mes, dia).getTime()` cria um objeto com a data especificada, o valor do mês vai de 0 a 11, sendo 0 janeiro e 11 dezembro.
