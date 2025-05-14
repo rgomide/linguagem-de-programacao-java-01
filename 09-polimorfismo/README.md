@@ -8,6 +8,7 @@
 - [Uso do Polimorfismo](#uso-do-polimorfismo)
 - [Características do Polimorfismo](#características-do-polimorfismo)
 - [Vantagens do Polimorfismo](#vantagens-do-polimorfismo)
+- [Métodos e classes final](#métodos-e-classes-final)
 - [Boas Práticas](#boas-práticas)
 - [Exemplo de Aplicação](#exemplo-de-aplicação)
 - [Exercícios](#exercícios)
@@ -120,6 +121,32 @@ public class Main {
 2. Reutilização de código
 3. Manutenção mais fácil
 4. Código mais limpo e organizado
+
+## Métodos e classes final
+
+Métodos e classes podem ser declarados como `final` para indicar que eles não podem ser sobrescritos ou herdados, respectivamente.
+
+Exemplo:
+
+```java
+public final class Animal {
+    public final void fazerSom() {
+        System.out.println("Animal fazendo som");
+    }
+}
+```
+
+O método `fazerSom` da classe `Animal` não pode ser sobrescrito pelas classes que herdam de `Animal`.
+
+A mesma coisa serve para classes, que não podem ser herdadas.
+
+```java
+public final class Animal {
+    // ...
+}
+```
+
+A classe `Animal` não pode ser herdada.
 
 ## Boas Práticas
 
