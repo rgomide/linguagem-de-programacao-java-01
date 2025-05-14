@@ -14,8 +14,8 @@
 - [Atributos e métodos de classe](06-atributos-e-metodos-de-classe/)
 - [Sobrecarga de métodos](07-sobrecarga-de-metodos/)
 - [Herança](08-heranca/)
+- [Polimorfismo](09-polimorfismo/)
 - Classes Object e String
-- Polimorfismo
 
 
 ## Solução de problemas
