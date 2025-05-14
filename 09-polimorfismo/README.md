@@ -235,10 +235,18 @@ public class PagamentoPIX extends Pagamento {
 ```
 
 Requisitos:
-1. Cada tipo de pagamento deve ter sua própria implementação do método `processar()`
-2. Cada tipo de pagamento deve ter sua própria implementação do método `gerarComprovante()`
+1. Cada tipo de pagamento deve ter sua própria implementação do método `processar()`:
+   - `PagamentoCartao`: Deve exibir uma mensagem simulando a validação do cartão, incluindo os últimos 4 dígitos e a bandeira
+   - `PagamentoBoleto`: Deve exibir uma mensagem com o código de barras e a data de vencimento
+   - `PagamentoPIX`: Deve exibir uma mensagem com o tipo de chave PIX e a chave utilizada
+
+2. Cada tipo de pagamento deve ter sua própria implementação do método `gerarComprovante()`:
+   - `PagamentoCartao`: Deve gerar um comprovante com os dados do cartão (últimos 4 dígitos), valor e data
+   - `PagamentoBoleto`: Deve gerar um comprovante com o código de barras, valor, data de vencimento e instruções de pagamento
+   - `PagamentoPIX`: Deve gerar um comprovante com a chave PIX, valor, data e status da transação
+
 3. Crie uma classe `ProcessadorPagamentos` que aceita qualquer tipo de pagamento
-4. Demonstre o uso do polimorfismo processando diferentes tipos de pagamento
+4. Demonstre o uso do polimorfismo processando diferentes tipos de pagamento. Utilize a sua criatividade para gerar as mensagens de pagamento.
 
 ### Exercício 3: Sistema de Notificações
 Implemente um sistema de notificações que suporta diferentes canais de envio (Email, SMS e Push).
@@ -288,8 +296,16 @@ public class NotificacaoPush extends Notificacao {
 ```
 
 Requisitos:
-1. Cada tipo de notificação deve ter sua própria implementação do método `enviar()`
-2. Cada tipo de notificação deve ter sua própria implementação do método `validar()`
+1. Cada tipo de notificação deve ter sua própria implementação do método `enviar()`:
+   - `NotificacaoEmail`: Deve exibir uma mensagem simulando o envio de email, incluindo assunto, destinatário e cópias
+   - `NotificacaoSMS`: Deve exibir uma mensagem simulando o envio de SMS, incluindo número de telefone e confirmação de leitura
+   - `NotificacaoPush`: Deve exibir uma mensagem simulando o envio de notificação push, incluindo dispositivo e prioridade
+
+2. Cada tipo de notificação deve ter sua própria implementação do método `validar()`:
+   - `NotificacaoEmail`: Deve validar o formato do email, assunto e lista de cópias
+   - `NotificacaoSMS`: Deve validar o formato do número de telefone e tamanho da mensagem
+   - `NotificacaoPush`: Deve validar o dispositivo e a prioridade da notificação
+
 3. Crie uma classe `GerenciadorNotificacoes` que pode enviar qualquer tipo de notificação
 4. Implemente um método que envia notificações em lote usando polimorfismo
 
@@ -341,8 +357,16 @@ public class RelatorioCSV extends Relatorio {
 ```
 
 Requisitos:
-1. Cada tipo de relatório deve ter sua própria implementação do método `gerar()`
-2. Cada tipo de relatório deve ter sua própria implementação do método `validarDados()`
+1. Cada tipo de relatório deve ter sua própria implementação do método `gerar()`:
+   - `RelatorioPDF`: Deve exibir uma mensagem simulando a geração de PDF, incluindo estilo e sumário
+   - `RelatorioHTML`: Deve exibir uma mensagem simulando a geração de HTML, incluindo tema e responsividade
+   - `RelatorioCSV`: Deve exibir uma mensagem simulando a geração de CSV, incluindo delimitador e cabeçalho
+
+2. Cada tipo de relatório deve ter sua própria implementação do método `validarDados()`:
+   - `RelatorioPDF`: Deve validar o estilo e a estrutura do sumário
+   - `RelatorioHTML`: Deve validar o tema e a estrutura responsiva
+   - `RelatorioCSV`: Deve validar o delimitador e o formato dos dados
+
 3. Crie uma classe `GeradorRelatorios` que pode gerar qualquer tipo de relatório
 4. Implemente um método que gera múltiplos relatórios em diferentes formatos usando polimorfismo
 
