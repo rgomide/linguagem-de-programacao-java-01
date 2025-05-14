@@ -13,6 +13,7 @@
 - [Exemplo de Aplicação](#exemplo-de-aplicação)
 - [Exercícios](#exercícios)
 - [Referências](#referências)
+
 ## Introdução
 
 O polimorfismo é um dos pilares da Programação Orientada a Objetos (POO) que permite que objetos de diferentes classes sejam tratados de maneira uniforme através de uma referência comum. Em Java, o polimorfismo permite que um objeto possa ser referenciado por uma variável de um tipo mais genérico.
