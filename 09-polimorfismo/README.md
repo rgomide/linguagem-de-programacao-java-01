@@ -12,7 +12,7 @@
 - [Boas Práticas](#boas-práticas)
 - [Exemplo de Aplicação](#exemplo-de-aplicação)
 - [Exercícios](#exercícios)
-
+- [Referências](#referências)
 ## Introdução
 
 O polimorfismo é um dos pilares da Programação Orientada a Objetos (POO) que permite que objetos de diferentes classes sejam tratados de maneira uniforme através de uma referência comum. Em Java, o polimorfismo permite que um objeto possa ser referenciado por uma variável de um tipo mais genérico.
@@ -188,4 +188,164 @@ Crie uma classe `Animal` com um método `fazerSom()`. Em seguida, crie duas subc
 
 Represente o som do animal a partir de uma onomatopeia.
 
+### Exercício 2: Sistema de Pagamentos
+Crie um sistema de processamento de pagamentos que demonstre polimorfismo. O sistema deve suportar diferentes tipos de pagamento (Cartão de Crédito, Boleto e PIX).
 
+Estrutura das classes:
+```java
+public class Pagamento {
+    protected double valor;
+    protected String data;
+    
+    public Pagamento(double valor, String data) {
+        this.valor = valor;
+        this.data = data;
+    }
+    
+    public void processar() {
+        System.out.println("Processando pagamento genérico");
+    }
+    
+    public void gerarComprovante() {
+        System.out.println("Gerando comprovante genérico");
+    }
+}
+
+public class PagamentoCartao extends Pagamento {
+    private String numeroCartao;
+    private String bandeira;
+    
+    // Implementar construtor e métodos específicos
+}
+
+public class PagamentoBoleto extends Pagamento {
+    private String codigoBarras;
+    private String dataVencimento;
+    
+    // Implementar construtor e métodos específicos
+}
+
+public class PagamentoPIX extends Pagamento {
+    private String chavePIX;
+    private String tipoChave;
+    
+    // Implementar construtor e métodos específicos
+}
+```
+
+Requisitos:
+1. Cada tipo de pagamento deve ter sua própria implementação do método `processar()`
+2. Cada tipo de pagamento deve ter sua própria implementação do método `gerarComprovante()`
+3. Crie uma classe `ProcessadorPagamentos` que aceita qualquer tipo de pagamento
+4. Demonstre o uso do polimorfismo processando diferentes tipos de pagamento
+
+### Exercício 3: Sistema de Notificações
+Implemente um sistema de notificações que suporta diferentes canais de envio (Email, SMS e Push).
+
+Estrutura das classes:
+```java
+public class Notificacao {
+    protected String destinatario;
+    protected String mensagem;
+    protected String dataEnvio;
+    
+    public Notificacao(String destinatario, String mensagem, String dataEnvio) {
+        this.destinatario = destinatario;
+        this.mensagem = mensagem;
+        this.dataEnvio = dataEnvio;
+    }
+    
+    public void enviar() {
+        System.out.println("Enviando notificação genérica");
+    }
+    
+    public void validar() {
+        System.out.println("Validando notificação genérica");
+    }
+}
+
+public class NotificacaoEmail extends Notificacao {
+    private String assunto;
+    private String[] copias;
+    
+    // Implementar construtor e métodos específicos
+}
+
+public class NotificacaoSMS extends Notificacao {
+    private String numeroTelefone;
+    private boolean confirmacaoLeitura;
+    
+    // Implementar construtor e métodos específicos
+}
+
+public class NotificacaoPush extends Notificacao {
+    private String dispositivo;
+    private String prioridade;
+    
+    // Implementar construtor e métodos específicos
+}
+```
+
+Requisitos:
+1. Cada tipo de notificação deve ter sua própria implementação do método `enviar()`
+2. Cada tipo de notificação deve ter sua própria implementação do método `validar()`
+3. Crie uma classe `GerenciadorNotificacoes` que pode enviar qualquer tipo de notificação
+4. Implemente um método que envia notificações em lote usando polimorfismo
+
+### Exercício 4: Sistema de Relatórios
+Crie um sistema de geração de relatórios que suporta diferentes formatos (PDF, HTML e CSV).
+
+Estrutura das classes:
+```java
+public class Relatorio {
+    protected String titulo;
+    protected String[] dados;
+    protected String dataGeracao;
+    
+    public Relatorio(String titulo, String[] dados, String dataGeracao) {
+        this.titulo = titulo;
+        this.dados = dados;
+        this.dataGeracao = dataGeracao;
+    }
+    
+    public void gerar() {
+        System.out.println("Gerando relatório genérico");
+    }
+    
+    public void validarDados() {
+        System.out.println("Validando dados do relatório genérico");
+    }
+}
+
+public class RelatorioPDF extends Relatorio {
+    private String estilo;
+    private boolean incluirSumario;
+    
+    // Implementar construtor e métodos específicos
+}
+
+public class RelatorioHTML extends Relatorio {
+    private String tema;
+    private boolean responsivo;
+    
+    // Implementar construtor e métodos específicos
+}
+
+public class RelatorioCSV extends Relatorio {
+    private String delimitador;
+    private boolean incluirCabecalho;
+    
+    // Implementar construtor e métodos específicos
+}
+```
+
+Requisitos:
+1. Cada tipo de relatório deve ter sua própria implementação do método `gerar()`
+2. Cada tipo de relatório deve ter sua própria implementação do método `validarDados()`
+3. Crie uma classe `GeradorRelatorios` que pode gerar qualquer tipo de relatório
+4. Implemente um método que gera múltiplos relatórios em diferentes formatos usando polimorfismo
+
+## Referências
+
+- [Polymorphism](https://docs.oracle.com/javase/tutorial/java/IandI/polymorphism.html)
+- [Writing Final Classes and Methods](https://docs.oracle.com/javase/tutorial/java/IandI/final.html)
