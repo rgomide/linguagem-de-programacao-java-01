@@ -124,3 +124,9 @@ String texto = String.format("%-10s | %10s", "Nome", "Valor");
 String dataHora = String.format("%tF %tT", new Date(), new Date());
 // Resultado: "2024-03-05 14:30:45"
 ```
+
+## Referências
+
+- [Object](https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html)
+- [String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)
+- [Java String format() Method](https://www.w3schools.com/java/ref_string_format.asp)
