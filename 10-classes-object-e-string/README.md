@@ -4,6 +4,7 @@
 - [Herança da Classe Object](#herança-da-classe-object)
 - [Métodos Importantes da Classe Object](#métodos-importantes-da-classe-object)
 - [Classe String e Método format()](#classe-string-e-método-format)
+- [Referências](#referências)
 
 ## Herança da Classe Object
 
