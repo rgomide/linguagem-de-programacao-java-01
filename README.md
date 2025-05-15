@@ -15,7 +15,7 @@
 - [Sobrecarga de métodos](07-sobrecarga-de-metodos/)
 - [Herança](08-heranca/)
 - [Polimorfismo](09-polimorfismo/)
-- Classes Object e String
+- [Classes Object e String](10-classes-object-e-string/)
 
 
 ## Solução de problemas
