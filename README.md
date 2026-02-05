@@ -6,6 +6,7 @@
 - [Estruturas de controle](01-estruturas-de-controle/)
 - [Arrays](02-arrays/)
 - [Funções](03-funcoes/)
+- [Recursividade](11-recursividade/)
 
 ## Programação Orientada a Objetos
 
