@@ -351,13 +351,13 @@ Escreva uma função recursiva para calcular o n-ésimo número de Fibonacci.
 
 **Exemplo:**
 ```java
-fibonacci(0) = 0
-fibonacci(1) = 1
+fibonacci(1) = 0
 fibonacci(2) = 1
-fibonacci(3) = 2
-fibonacci(4) = 3
-fibonacci(5) = 5
-fibonacci(6) = 8
+fibonacci(3) = 1
+fibonacci(4) = 2
+fibonacci(5) = 3
+fibonacci(6) = 5
+fibonacci(7) = 8
 ```
 
 **Dica:** Você tem dois casos base (n=0 e n=1) e o caso recursivo soma os dois anteriores.
