@@ -438,6 +438,99 @@ contarCaractere("java", 'z') = 0
 - Caso base: string vazia retorna 0
 - Caso recursivo: se o primeiro caractere é igual ao procurado, soma 1 + contar no resto; senão, apenas conta no resto
 
+### Exercício 10: Verificar Palíndromo
+
+Escreva uma função recursiva que verifique se uma string é um palíndromo (lê-se igual de trás para frente).
+
+**Exemplo:**
+```java
+ehPalindromo("radar") = true
+ehPalindromo("java") = false
+ehPalindromo("A man a plan a canal Panama") = false  // (com espaços e maiúsculas - considere apenas a versão normalizada)
+ehPalindromo("oso") = true
+ehPalindromo("a") = true
+```
+
+**Dica:**
+- Caso base: string vazia ou com 1 caractere retorna `true`
+- Caso recursivo: compare o primeiro e o último caractere; se forem iguais, verifique recursivamente o "meio" da string (sem o primeiro e último)
+- Para simplificar, pode assumir que a string já vem normalizada (minúscula, sem espaços)
+
+### Exercício 11: Soma dos Elementos de um Array
+
+Implemente uma função recursiva que calcule a soma de todos os elementos de um array de inteiros.
+
+**Exemplo:**
+```java
+somaArray(new int[]{1, 2, 3, 4, 5}) = 15
+somaArray(new int[]{10, 20, 30}) = 60
+somaArray(new int[]{7}) = 7
+somaArray(new int[]{}) = 0
+```
+
+**Dica:**
+- Crie um método auxiliar que receba o array e um índice atual
+- Caso base: quando o índice alcançar o tamanho do array, retorne 0
+- Caso recursivo: elemento no índice atual + soma recursiva a partir do próximo índice
+
+### Exercício 12: Busca do Maior Elemento de um Array
+
+Implemente uma função recursiva que encontre o maior elemento em um array de inteiros.
+
+**Exemplo:**
+```java
+maiorElemento(new int[]{5, 2, 8, 1, 9, 3}) = 9
+maiorElemento(new int[]{10, 20, 30}) = 30
+maiorElemento(new int[]{7}) = 7
+maiorElemento(new int[]{-5, -2, -8}) = -2
+```
+
+**Dica:**
+- Crie um método auxiliar que receba o array e um índice atual
+- Caso base: quando o índice alcançar o tamanho do array, retorne o menor valor possível (por exemplo, `Integer.MIN_VALUE`) ou o último elemento
+- Caso recursivo: retorne o máximo entre o elemento no índice atual e o resultado da chamada recursiva a partir do próximo índice
+
+### Exercício 13: Torres de Hanói
+
+O problema das Torres de Hanói consiste em mover `n` discos de uma torre de origem para uma torre de destino, usando uma torre auxiliar, seguindo as regras: apenas um disco pode ser movido por vez e um disco maior nunca pode ficar sobre um menor.
+
+Implemente uma função recursiva que imprima as instruções para resolver o problema (qual disco mover de qual torre para qual torre).
+
+**Exemplo:**
+```
+torresDeHanoi(2, 'A', 'B', 'C')
+Saída:
+Mover disco 1 de A para B
+Mover disco 2 de A para C
+Mover disco 1 de B para C
+```
+
+**Dica:**
+- [Entenda as regras](https://www.youtube.com/watch?v=UyLYxYeouSc)
+- Caso base: quando `n == 1`, mova o disco diretamente da origem para o destino
+- Caso recursivo: (1) mova `n-1` discos da origem para o auxiliar, (2) mova o disco maior da origem para o destino, (3) mova os `n-1` discos do auxiliar para o destino
+
+### Exercício 14: Busca Binária Recursiva
+
+Implemente uma função recursiva que realize a busca binária em um array ordenado de inteiros. A função deve retornar o índice do elemento procurado, ou -1 se não for encontrado.
+
+**Exemplo:**
+```java
+int[] array = {1, 3, 5, 7, 9, 11, 13};
+buscaBinaria(array, 7) = 3
+buscaBinaria(array, 1) = 0
+buscaBinaria(array, 13) = 6
+buscaBinaria(array, 4) = -1
+buscaBinaria(array, 0) = -1
+```
+
+**Dica:**
+- Crie um método auxiliar que receba o array, o elemento buscado e os índices de início e fim da faixa de busca
+- Caso base: se início > fim, retorne -1 (elemento não encontrado)
+- Calcule o índice do meio: `meio = (inicio + fim) / 2`
+- Se o elemento do meio for igual ao buscado, retorne o índice do meio
+- Caso recursivo: se o elemento buscado for menor que o do meio, busque na metade esquerda; senão, busque na metade direita
+
 ## Referências
 
 - [Baeldung - Recursion in Java](https://www.baeldung.com/java-recursion)
